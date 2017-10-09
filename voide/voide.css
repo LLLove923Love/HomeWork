@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1507550863652");
+  /* IE9*/
+  src: url("iconfont.eot?t=1507550863652#iefix") format("embedded-opentype"), url("data:application/x-font-woff;charset=utf-8;base64,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") format("woff"), url("iconfont.ttf?t=1507550863652") format("truetype"), url("iconfont.svg?t=1507550863652#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 28px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(right, #bc24b7 30%, #781fa3 50%, #5621b8 80%);
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  overflow: hidden;
+  border: 10px solid #fff;
+  border-radius: 10%;
+}
+
+.control {
+  width: 100%;
+  height: 7%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  padding: 1% 0 0 5%;
+}
+.control span {
+  font-size: 28px;
+  line-height: 120%;
+}
+.control div {
+  float: left;
+}
+
+.length-music {
+  background: rgba(255, 255, 255, 0.4);
+  width: 50%;
+  height: 10%;
+  margin: 1.3%;
+  position: relative;
+}
+.length-music .white-length {
+  width: 10px;
+  height: 20px;
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+  top: -8px;
+}
+
+.listen-change {
+  width: 15%;
+}
+.listen-change .white-length {
+  left: 3%;
+}
+
+.playTime {
+  margin-right: 3%;
+}
+.playTime span {
+  font-size: 20px;
+}
+
+.window-change span {
+  font-size: 24px;
+}
