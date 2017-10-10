@@ -18,7 +18,6 @@ $(function(){
 	context.fill();
 	context.stroke();
 	context.closePath();
-	
 	//内边框
 	context.save();
 	context.beginPath();
