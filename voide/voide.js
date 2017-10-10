@@ -48,11 +48,11 @@ $(function(){
 		}
 	});
 });
-	//音量控制-开关音
+//音量控制-开关音
 function clickVoice(){
 	var listen = true;
 	var voilength = $("#whiteLength").css("left");
-				$("#media").get(0).volume = parseInt(voilength)/$(".listen-change").width();
+		$("#media").get(0).volume = parseInt(voilength)/$(".listen-change").width();
 		$(".listen span").click(function(){
 		listen = listen?false:true;
 		if(listen){
@@ -82,16 +82,15 @@ function clicklength(){
 		$("#media").get(0).ontimeupdate = function(){
 			var _currenTime=$("#media").get(0).currentTime;
 			var _Time =  $("#media").get(0).duration;
-			$("#voide-white").css("left",_currenTime/_Time*$(".length-music").width());
+			$("#voide-white").css("left",_currenTime/_Time*$(".voide-change").width());
 			var time = parseInt(_currenTime);
 			$("#currentTime").text(time);
 		};
-		$(".length-music").mousedown(function(e){
+		$(".voide-change").mousedown(function(e){
 			var e = e || event;
 			var widlength = e.clientX - $(this).offset().left;
 				$("#voide-white").css("left",widlength);
-				$("#media").get(0).currentTime = parseInt(widlength/$(".length-music").width()*$("#media").get(0).duration);
-				console.log($("#media").get(0).currentTime);
+				$("#media").get(0).currentTime = parseInt(widlength/$(".voide-change").width()*$("#media").get(0).duration);
 		});
 }
 function audioStart(){
