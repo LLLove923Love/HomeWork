@@ -81,7 +81,7 @@ function lineWatch(start,end,context){
 function activeTime(context){
 	context.clearRect(-350,-300,700,600);
 	var _date = new Date();
-	var hours = Math.abs(_date.getHours() -12)*30;
+	var hours = _date.getHours()*30;
 	var mins = _date.getMinutes()*6;
 	var secs =_date.getSeconds()*6;
 	//时针
